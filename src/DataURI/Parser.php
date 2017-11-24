@@ -60,7 +60,7 @@ class Parser
 
         $base64 = false;
 
-        $mimeType = $matches[1];
+        $mimeType = $matches[1] ? $matches[1] : null;
         $params = $matches[2];
         $rawData = $matches[3];
 
